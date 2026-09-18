@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0f3b2f" />
+    <meta name="description" content="Consulte seus pontos, créditos e histórico AMEVURI Privé." />
+    <link rel="icon" href="/assets/favicon-amevuri-exact.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Minha conta Privé | AMEVURI</title>
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+    <header class="site-header"><a class="brand" href="/" aria-label="AMEVURI, início"><img class="brand-mark" src="/assets/brand-symbol-320.webp" alt="" width="40" height="37" /><span>AMEVURI</span></a><button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button><nav id="menu" class="nav" aria-label="Navegação principal"><a href="/colecao">Criações</a><a href="/encontre-seu-aroma">Encontre seu aroma</a><a href="/sobre">A AMEVURI</a><a href="/journal">Journal</a><a href="/prive">Privé</a><a class="nav-cta" href="/checkout">Sacola</a></nav></header>
+    <main id="conteudo" class="prive-account-page section-pad" data-prive-account>
+      <section class="prive-account-intro"><p class="eyebrow">AMEVURI Privé</p><h1>Minha<br /><em>conta.</em></h1><p class="lead">Consulte seus pontos, transforme saldo em crédito e acompanhe cada movimento.</p></section>
+      <section class="prive-login" data-prive-login>
+        <form data-code-request novalidate><h2>Acessar com email</h2><p>Enviaremos um código de uso único, válido por 10 minutos.</p><label>Email<input name="email" type="email" autocomplete="email" required /></label><div class="prive-honeypot" aria-hidden="true"><label>Empresa<input name="company" tabindex="-1" autocomplete="off" /></label></div><button class="btn btn-primary">Enviar código</button></form>
+        <form data-code-verify hidden novalidate><h2>Informe o código</h2><p data-code-destination></p><label>Código de 6 números<input name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required /></label><button class="btn btn-primary">Entrar com segurança</button><button class="btn btn-ghost" type="button" data-code-back>Usar outro email</button></form>
+        <p class="prive-form-message" data-login-message role="status" aria-live="polite"></p>
+      </section>
+      <section class="prive-dashboard" data-prive-dashboard hidden>
+        <div class="prive-account-head"><div><p class="eyebrow">Boas vindas</p><h2 data-member-name></h2><p data-member-email></p></div><button class="btn btn-ghost" data-logout>Sair</button></div>
+        <div class="prive-balance-grid"><article><span>Saldo atual</span><strong data-points>0</strong><small>pontos</small></article><article><span>Crédito disponível</span><strong data-credit>R$ 0,00</strong><small>para o checkout</small></article><article><span>Total acumulado</span><strong data-lifetime>0</strong><small>pontos</small></article></div>
+        <section class="prive-redeem"><div><p class="eyebrow">Converter pontos</p><h3>100 pontos = R$5</h3><p>Escolha um múltiplo de 100. O crédito ficará disponível para sua próxima compra.</p></div><form data-redeem-form><label>Pontos<select name="points" data-redeem-options></select></label><button class="btn btn-primary">Converter em crédito</button></form></section>
+        <section class="prive-history"><p class="eyebrow">Histórico</p><h3>Movimentações</h3><div data-history></div></section>
+        <section class="prive-settings"><p class="eyebrow">Dados e privacidade</p><form data-profile-form><label>Nome<input name="name" autocomplete="name" required /></label><label>WhatsApp<input name="phone" autocomplete="tel" /></label><label class="prive-check"><input name="marketingConsent" type="checkbox" /><span>Quero receber novidades e benefícios Privé.</span></label><button class="btn btn-ghost">Salvar preferências</button></form><button class="text-button" type="button" data-close-account>Encerrar minha participação e eliminar meus dados de perfil</button><p class="summary-small">Registros de pedidos e documentos que precisem ser preservados por obrigação legal não fazem parte do perfil Privé.</p></section>
+        <p class="prive-form-message" data-account-message role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <footer class="footer section-pad"><div class="footer-brand"><img src="/assets/amevuri-logo.webp" alt="AMEVURI" width="180" height="180" loading="lazy" /><p>O lugar onde o aroma encontra a alma.</p></div><div class="footer-links"><a href="/trocas-e-devolucoes">Trocas e devoluções</a><a href="/prive">AMEVURI Privé</a><a href="/politica-privacidade">Privacidade</a><a href="https://wa.me/5521971133616" target="_blank" rel="noopener">Atendimento</a></div><div class="footer-meta"><span>© 2026 AMEVURI</span></div></footer>
+    <script src="/script.js"></script>
+    <script src="/prive-account.js"></script>
+  </body>
+</html>
