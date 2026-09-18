@@ -1,0 +1,33 @@
+AMEVURI v5.5.0
+
+Auditoria estrutural
+PASS 83 arquivos públicos
+PASS 516 referências locais verificadas
+PASS JavaScript externo e embutido válido
+PASS configuração Cloudflare válida
+PASS catálogo, pesos e textos consistentes
+
+Testes de contrato e integração simulada
+PASS 32 de 32 testes
+PASS cadastro Privé e consentimentos
+PASS código temporário de uso único e sessão segura
+PASS consulta de saldo e histórico autenticados
+PASS pontos creditados uma única vez após pagamento
+PASS frete e crédito utilizado não pontuam
+PASS resgate em múltiplos de 100 pontos
+PASS aplicação e devolução transacional do crédito
+PASS expiração em doze meses
+PASS reembolso, estorno e dívida de pontos utilizados
+PASS ausência de pontos retroativos
+PASS ajuste administrativo auditável
+PASS encerramento e anonimização do perfil
+PASS checkout, estoque, SumUp, Melhor Envio e Resend preservados
+
+Os testes usam armazenamento e provedores simulados. Não enviam mensagens,
+não criam etiquetas e não realizam cobranças reais.
+
+O comando de compilação remota do Wrangler não foi executado neste ambiente
+porque o acesso ao registro npm foi recusado. A sintaxe do Worker, a
+configuração e os contratos internos foram validados localmente. Execute
+`npm ci && npm run check && npm test && npx wrangler deploy --dry-run` no fluxo
+do GitHub ou Cloudflare antes da publicação.
