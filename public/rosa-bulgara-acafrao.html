@@ -39,6 +39,45 @@
         align-self: center;
       }
     </style>
+    <style>
+      .aroma-lp-hero .aroma-products-gallery {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 14px;
+        width: 100%;
+        min-width: 0;
+        align-self: center;
+        align-items: start;
+      }
+      .aroma-products-gallery > figure {
+        grid-column: span 2;
+        margin: 0;
+        min-width: 0;
+      }
+      .aroma-products-gallery > figure:nth-child(-n+2) {
+        grid-column: span 3;
+      }
+      .aroma-products-gallery > figure > img {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        aspect-ratio: auto;
+        object-fit: contain;
+        transform: none;
+      }
+      @media (max-width: 480px) {
+        .aroma-lp-hero .aroma-products-gallery {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+        }
+        .aroma-products-gallery > figure,
+        .aroma-products-gallery > figure:nth-child(-n+2) {
+          grid-column: span 1;
+        }
+      }
+    </style>
     <title>Rosa Búlgara &amp; Açafrão | Prévia AMEVURI</title>
     <meta name="description" content="Prévia editorial da landing page AMEVURI para Rosa Búlgara &amp; Açafrão, família Chypre Floral." />
   </head>
@@ -60,16 +99,16 @@
         <div class="aroma-lp-copy reveal">
           <p class="eyebrow">Novo aroma · Chypre Floral</p>
           <h1>Rosa Búlgara &amp; Açafrão</h1>
-          <p class="aroma-lp-code">80.781</p>
           <p class="aroma-lp-tagline">Opulência floral e especiada</p>
           <p class="lead">Rosa e neroli anunciam uma composição de presença marcante. Madeira oud, açafrão e chocolate preto criam contraste no coração, enquanto patchouli e madeira ambarada sustentam um fundo profundo e elegante.</p>
           <div class="hero-actions"><a class="btn btn-primary" href="#piramide">Descobrir a composição</a><a class="text-link" href="https://wa.me/5521971133616?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20aroma%20Rosa%20B%C3%BAlgara%20%26%20A%C3%A7afr%C3%A3o%20da%20AMEVURI." target="_blank" rel="noopener">Quero conhecer este aroma →</a></div>
         </div>
-        <div class="aroma-lp-visual reveal delay-1" aria-label="Composição visual das notas do aroma">
-          <figure class="aroma-note-tile"><img src="/assets/aromas/rosa-bulgara-acafrao/saida.webp" alt="Notas de saída de Rosa Búlgara &amp; Açafrão" width="310" height="165" decoding="async" /><span>Saída</span></figure>
-          <figure class="aroma-note-tile"><img src="/assets/aromas/rosa-bulgara-acafrao/corpo.webp" alt="Notas de corpo de Rosa Búlgara &amp; Açafrão" width="317" height="165" decoding="async" /><span>Corpo</span></figure>
-          <figure class="aroma-note-tile"><img src="/assets/aromas/rosa-bulgara-acafrao/fundo.webp" alt="Notas de fundo de Rosa Búlgara &amp; Açafrão" width="318" height="165" decoding="async" /><span>Fundo</span></figure>
-          <div class="aroma-lp-seal" aria-hidden="true">AMEVURI<br />80.781</div>
+        <div class="aroma-products-gallery reveal delay-1" aria-label="Produtos Rosa Búlgara &amp; Açafrão">
+          <figure><img src="/assets/aromas/rosa-bulgara-acafrao/DifusorRosa.png" alt="Difusor de varetas Rosa Búlgara &amp; Açafrão AMEVURI" width="1122" height="1402" decoding="async" /></figure>
+          <figure><img src="/assets/aromas/rosa-bulgara-acafrao/homeParfumRosa.png" alt="Home Parfum Rosa Búlgara &amp; Açafrão AMEVURI" width="1122" height="1402" decoding="async" /></figure>
+          <figure><img src="/assets/aromas/rosa-bulgara-acafrao/latinha20g.png" alt="Vela em lata 20 g Rosa Búlgara &amp; Açafrão AMEVURI" width="1254" height="1254" decoding="async" /></figure>
+          <figure><img src="/assets/aromas/rosa-bulgara-acafrao/velaCxRosa.png" alt="Vela com embalagem Rosa Búlgara &amp; Açafrão AMEVURI" width="1122" height="1402" decoding="async" /></figure>
+          <figure><img src="/assets/aromas/rosa-bulgara-acafrao/waxMeltsRosa.png" alt="Wax Melts Rosa Búlgara &amp; Açafrão AMEVURI" width="1122" height="1402" decoding="async" /></figure>
         </div>
       </section>
 
@@ -79,7 +118,7 @@
       </section>
 
       <section class="aroma-lp-pyramid section-pad" id="piramide" aria-labelledby="piramide-rosa-bulgara-acafrao">
-        <div class="section-head reveal"><p class="eyebrow">Pirâmide olfativa · 80.781</p><h2 id="piramide-rosa-bulgara-acafrao">Da primeira impressão<br /><em>ao rastro que permanece.</em></h2></div>
+        <div class="section-head reveal"><p class="eyebrow">Pirâmide olfativa</p><h2 id="piramide-rosa-bulgara-acafrao">Da primeira impressão<br /><em>ao rastro que permanece.</em></h2></div>
         <div class="aroma-pyramid-grid"><article class="aroma-pyramid-card reveal delay-0"><img src="/assets/aromas/rosa-bulgara-acafrao/saida-notas.webp" alt="Composição visual das notas de Saída de Rosa Búlgara &amp; Açafrão" width="1254" height="1254" loading="lazy" decoding="async" /><p class="note-stage">Saída</p><h3>Saída</h3><p>Rosa, Neroli</p></article><article class="aroma-pyramid-card reveal delay-1"><img src="/assets/aromas/rosa-bulgara-acafrao/corpo-notas.webp" alt="Composição visual das notas de Corpo de Rosa Búlgara &amp; Açafrão" width="1254" height="1254" loading="lazy" decoding="async" /><p class="note-stage">Corpo</p><h3>Corpo</h3><p>Madeira Oud, Açafrão, Chocolate Preto</p></article><article class="aroma-pyramid-card reveal delay-2"><img src="/assets/aromas/rosa-bulgara-acafrao/fundo-notas.webp" alt="Composição visual das notas de Fundo de Rosa Búlgara &amp; Açafrão" width="1254" height="1254" loading="lazy" decoding="async" /><p class="note-stage">Fundo</p><h3>Fundo</h3><p>Patchouli, Madeira Ambarada</p></article></div>
       </section>
 
