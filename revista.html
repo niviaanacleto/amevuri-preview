@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Coleção Olfativa | AMEVURI</title>
+
+  <meta
+    name="description"
+    content="Conheça a Coleção Olfativa AMEVURI. Aromas que transformam ambientes em experiências sensoriais."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f6f1e9;
+      color: #143b2d;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .amevuri-revista {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 72px 24px 90px;
+    }
+
+    .amevuri-revista__intro {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .amevuri-revista__intro span {
+      display: block;
+      margin-bottom: 14px;
+
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .32em;
+
+      color: #a87932;
+    }
+
+    .amevuri-revista__intro h1 {
+      margin: 0 0 14px;
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 6vw, 78px);
+      line-height: .98;
+      font-weight: 400;
+
+      color: #103b2c;
+    }
+
+    .amevuri-revista__intro p {
+      max-width: 650px;
+      margin: 0 auto;
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.7;
+
+      color: #625b52;
+    }
+
+    .amevuri-revista__ornamento {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+
+      margin: 26px auto 35px;
+    }
+
+    .amevuri-revista__ornamento::before,
+    .amevuri-revista__ornamento::after {
+      content: "";
+      width: 55px;
+      height: 1px;
+      background: #b58a48;
+    }
+
+    .amevuri-revista__ornamento span {
+      font-family: Georgia, serif;
+      font-size: 15px;
+      color: #b58a48;
+    }
+
+    .amevuri-revista__viewer {
+      position: relative;
+
+      width: 100%;
+      padding-top: 64%;
+
+      overflow: hidden;
+
+      border-radius: 18px;
+
+      background: #eee6da;
+
+      box-shadow:
+        0 30px 80px rgba(15, 56, 42, .13),
+        0 3px 10px rgba(0, 0, 0, .04);
+    }
+
+    .amevuri-revista__viewer iframe {
+      position: absolute;
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      border: 0;
+    }
+
+    .amevuri-revista__assinatura {
+      margin-top: 34px;
+      text-align: center;
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      font-size: 17px;
+
+      color: #886633;
+    }
+
+    @media (max-width: 768px) {
+
+      .amevuri-revista {
+        padding: 48px 12px 60px;
+      }
+
+      .amevuri-revista__intro {
+        padding: 0 12px;
+        margin-bottom: 28px;
+      }
+
+      .amevuri-revista__intro h1 {
+        font-size: 44px;
+      }
+
+      .amevuri-revista__intro p {
+        font-size: 16px;
+      }
+
+      .amevuri-revista__viewer {
+        padding-top: 150%;
+        border-radius: 10px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="amevuri-revista">
+
+    <div class="amevuri-revista__intro">
+
+      <span>AMEVURI EDITORIAL</span>
+
+      <h1>Coleção Olfativa</h1>
+
+      <p>
+        Descubra aromas que transformam ambientes
+        em experiências, memórias e formas de viver o lar.
+      </p>
+
+      <div class="amevuri-revista__ornamento">
+        <span>✦</span>
+      </div>
+
+    </div>
+
+    <div class="amevuri-revista__viewer">
+
+      <iframe
+        src="https://heyzine.com/flip-book/a415c8414f.html"
+        allowfullscreen
+        allow="autoplay; fullscreen; clipboard-write"
+        scrolling="no"
+        title="AMEVURI — Coleção Olfativa">
+      </iframe>
+
+    </div>
+
+    <div class="amevuri-revista__assinatura">
+      Mais que aromas, ambientes vivem aqui.
+    </div>
+
+  </main>
+
+</body>
+</html>
